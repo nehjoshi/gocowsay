@@ -26,6 +26,7 @@ go install github.com/nehjoshi/gocowsay/cmd/gocowsay@latest
 ```
 
 Make sure your `$GOPATH/bin` or `$HOME/go/bin` is in your `PATH`. If not, add it to `~/.bashrc` by adding the following line to the end of the file:
+
 ```bash
 export PATH="$HOME/go/bin:$PATH"
 ```
@@ -51,6 +52,16 @@ To build a local binary:
 ```bash
 go build -o gocowsay ./cmd/gocowsay
 ./gocowsay < message.txt
+```
+
+### 🐳 Option 3: Run with Docker
+
+If you don't want to install Go, you can run `gocowsay` using Docker. Use the following series of commands:
+
+```bash
+git clone https://github.com/nehjoshi/gocowsay.git
+cd gocowsay
+docker build -t gocowsay .
 ```
 
 ---

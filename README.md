@@ -53,6 +53,7 @@ To build a local binary:
 go build -o gocowsay ./cmd/gocowsay
 ./gocowsay < message.txt
 ```
+---
 
 ### 🐳 Option 3: Run with Docker
 

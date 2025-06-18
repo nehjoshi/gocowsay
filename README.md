@@ -37,6 +37,8 @@ Then run:
 fortune | gocowsay
 ```
 
+If the installation fails, you may not have Go or Fortune installed on your system. If so, go to Option #4 to resolve this.
+
 ---
 
 ### 🛠️ Option 2: Clone & Run Locally (Development)
@@ -64,6 +66,20 @@ git clone https://github.com/nehjoshi/gocowsay.git
 cd gocowsay
 docker build -t gocowsay .
 ```
+
+---
+
+### Option 4: Use ```setup.sh``` (Recommended for Ubuntu)
+1. Download or copy the ```setup.sh``` file to your machine.
+2. Make the script executable (only needed once):
+```bash
+chmod u+x setup.sh
+```
+Run the script to automatically install all required dependencies and set up the project:
+```bash
+./setup.sh
+```
+This script is designed for Ubuntu-based distributions and will install Go (if missing), update your ```PATH```, install fortune, and build the project.
 
 ---
 

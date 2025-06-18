@@ -31,7 +31,7 @@ go install github.com/nehjoshi/gocowsay/cmd/gocowsay@latest
 # Check if fortune is installed
 if ! command -v fortune &> /dev/null; then
     echo "[*] Installing 'fortune' package..."
-    sudo apt update && sudo apt install fortune -y
+    sudo apt update && sudo apt install fortune-mod -y
 else
     echo "[*] 'fortune' is already installed"
 fi

@@ -77,7 +77,7 @@ fortune | gocowsay
 If you're on Ubuntu or Debian:
 
 ```bash
-sudo apt install fortune
+sudo apt install fortune-mod
 ```
 
 ---
